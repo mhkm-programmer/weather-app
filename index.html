@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background: rgb(233, 223, 120);">
+
+    <!-- Input text section  -->
+    <div class="container">
+        <h1 class="display-4 text-center p-5"> <b> Weather Update</b></h1>
+        <div class="input-group mb-3 w-50 m-auto">
+            <input type="text" class="form-control" id="searchInput" placeholder="Type Your City Name; ex. Dubai" aria-describedby="search-btn">
+            <span><button class="btn btn-success" type="button" id="search-btn">Search</button></span>
+          </div>
+    </div>
+
+    <!-- Weather search result  -->
+    <div class="weather-status text-center">
+
+    <!-- Icon link  -->
+        <img src=" http://openweathermap.org/img/wn/10d@2x.png" id="weather-icon" alt="weather-icon">
+    <!-- City Name  -->
+        <h2 id="city">Dubai</h2>
+    <!-- Temparature -->
+        <h3><span><b>Temparature: </b></span><span id="temp">39.09</span>°C</h3>
+    <!-- Feels Like  -->
+        <h3><span><b>Feels Like: </b></span><span id="feels_like">45.59</span>°C</h3>
+    <!-- Temp Condition & Description -->
+        <h4><span><b>Condition: </b></span><span id="condition"> Clear</span>, 
+        <br><span><b>Description: </b></span><span id="description">Clear Sky</span></h4>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </div>
+
+
+</body>
+</html>
